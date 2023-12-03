@@ -1,0 +1,66 @@
+@import "../../components/header/header.css";
+@import "../../components/checkbox/checkbox.css";
+@import "../../components/main/container.css";
+@import "../../components/cart/cart.css";
+@import "../../components/sidebar/sidebar.css";
+@import "../../components/button/button.css";
+@import "../../components/accordion/accordion.css";
+@import "../../components/card/card.css";
+@import "../../components/payment-block/payment-block.css";
+@import "../../components/payment-block/delivery-block.css";
+@import "../../components/accordion/accordion_absence/accordion_absence.css";
+@import "../../components/payment-type/payment-type.css";
+@import "../../components/delivery-container/delivery-container.css";
+@import "../../components/form/form.css";
+@import "../../components/footer/footer.css";
+@import "../../components/navbar/navbar.css";
+
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe UI/Segoe UI.ttf");
+}
+
+:root {
+  --white: #ffffff;
+  --grey-2: #dde2e5;
+  --background-white: #fff;
+  --background-smokey: #f6f6fa;
+  --text-black: #000;
+  --system-magenta: #cb11ab;
+  --system-magenta-with-opacity: rgba(203, 17, 171, 0.3);
+  --system-green-with-opacity: rgba(12, 180, 119, 0.3);
+  --rulers-rulers: rgba(0, 0, 0, 0.1);
+  --system-gray: #9797af;
+  --system-gray-opacity: rgba(0, 0, 0, 0.2);
+  --system-orange: #ff3b30;
+  --light-system-text: #000;
+  --rulers-rulers-input: rgba(0, 0, 0, 0.2);
+  --svg-black: #000;
+  --header-color: #6725a8;
+  --light-system-gray: #a0a0a4;
+  --system-smoky-dark: #f0ecf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe WP", sans-serif;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}

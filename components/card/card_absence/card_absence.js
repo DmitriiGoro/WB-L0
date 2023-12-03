@@ -18,7 +18,7 @@ export class Card_absence extends Card {
     div.innerHTML = `<div class="card" data-product-id="${id}">
 
     <div class="card__preview">
-      <img src="../../../assets/images/${image}" />
+      <img src="assets/images/${image}" />
       ${size ? `<span class="card__preview-size">${size}</span>` : ""}
     </div>
     <div class="card__info">

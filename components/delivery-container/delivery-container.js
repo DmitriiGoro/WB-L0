@@ -67,7 +67,7 @@ export class Delivery_container {
             if (amount === 0) {
               return "";
             }
-            return `<div><img src="../../assets/images/${image}" width="40px" height="56px"/> ${
+            return `<div><img src="assets/images/${image}" width="40px" height="56px"/> ${
               amount > 1 ? `<span class="notify">${amount}</span>` : ""
             }</div>`;
           })

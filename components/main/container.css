@@ -1,0 +1,21 @@
+.main__container {
+  padding: 0 24px 16px 24px;
+  background: var(--background-smokey, #f6f6fa);
+  height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .main__container {
+    position: relative;
+    padding: 0;
+  }
+
+  .content {
+    background: var(--header-color);
+  }
+
+  .main__container {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+}

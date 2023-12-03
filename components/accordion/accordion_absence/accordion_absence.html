@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <link rel="stylesheet" href="./accordion_absence.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { Accordion_absence } from "../accordion_absence/accordion_absence.js";
+      import { products } from "../../../assets/products-info/products.js";
+
+      const cart = [];
+
+      for (const product of products) {
+        const obj = {
+          id: product.id,
+          product: product,
+          amount: Math.round(Math.random() * 10),
+        };
+
+        cart.push(obj);
+        console.log(obj);
+      }
+
+      const accordion = new Accordion_absence(cart);
+      console.log(accordion);
+      document.body.append(accordion.element);
+    </script>
+  </body>
+</html>

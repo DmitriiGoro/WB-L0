@@ -1,0 +1,73 @@
+.payment-type {
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+  padding: 31px 24px 24px;
+}
+
+.payment-type__card {
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.payment-type__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-type__header h2 {
+  color: var(--text-black, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.9px;
+  margin: 0;
+}
+
+.button_to-change {
+  color: var(--system-magenta, #cb11ab);
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.payment-type__additional-info {
+  color: var(--system-gray, #9797af);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  word-spacing: -1.5px;
+}
+
+.payment-type__card-wrapper {
+  margin-top: 15px;
+}
+
+.payment-type__card-number {
+  letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 320px) {
+  .payment-type {
+    border-radius: 16px;
+    background: var(--background-white, #fff);
+    padding: 16px 16px 24px;
+  }
+
+  .payment-type__header h2 {
+    color: var(--text-black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.2px;
+  }
+}

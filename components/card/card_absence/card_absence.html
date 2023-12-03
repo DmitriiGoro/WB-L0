@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./card_absence.css" />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { Card_absence } from "./card_absence.js";
+      import { products } from "../../../assets/products-info/products.js";
+
+      const cart = [];
+
+      for (const product of products) {
+        const obj = {
+          id: product.id,
+          product: product,
+          amount: Math.round(Math.random() * 10),
+        };
+
+        const card = new Card_absence(obj);
+
+        document.body.append(card.element);
+      }
+    </script>
+  </body>
+</html>

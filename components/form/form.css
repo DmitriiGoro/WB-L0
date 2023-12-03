@@ -1,0 +1,132 @@
+.cart-form {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 16px 142px 24px 24px;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid var(--system-gray);
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid var(--system-gray);
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:placeholder-shown ~ .cart-form__subtitle {
+  top: 0;
+  transition: top 150ms linear, font-size 100ms linear;
+}
+
+input:focus ~ .cart-form__subtitle {
+  top: -24px;
+  font-size: 13px;
+}
+
+input:not(:placeholder-shown) ~ .cart-form__subtitle {
+  top: -24px;
+}
+
+.cart-form__name {
+  width: calc(100% / 2 - 24px);
+}
+
+.cart-form__label {
+  position: relative;
+}
+
+.cart-form__subtitle {
+  position: absolute;
+  left: 0;
+}
+
+.cart-form__top {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 37px;
+}
+
+.cart-form__bottom {
+  display: flex;
+  gap: 24px;
+}
+
+.cart-form__subtitle {
+  color: var(--system-gray, #9797af);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.cart-form__additional-info {
+  color: var(--text-black, #000);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.cart-form__name_bottom {
+  width: calc(100% / 3 - 24px);
+}
+
+.cart-form__input_invalid,
+.cart-form__input_invalid:focus {
+  color: var(--system-orange);
+  border-bottom: 1px solid var(--system-orange);
+}
+
+.cart-form__input_invalid ~ .cart-form__additional-info,
+.cart-form__input_invalid ~ .cart-form__subtitle {
+  color: var(--system-orange);
+}
+
+.cart-form h3 {
+  margin: 0 0 33px;
+  color: var(--text-black, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart-form {
+    padding: 16px 16px 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cart-form__header h2 {
+    color: var(--text-black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.2px;
+  }
+  .cart-form__top {
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+  .cart-form__bottom {
+    flex-direction: column;
+  }
+  .cart-form__name {
+    width: 100%;
+  }
+}

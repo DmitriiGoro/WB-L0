@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="./delivery-container.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="delivery-container">
+      <div class="delivery-container__header">
+        <h2>Способ доставки</h2>
+        <button class="delivery-container__button button">Изменить</button>
+      </div>
+      <div class="delivery-container__type">
+        <div class="delivery-container__type-wrapper">
+          <span class="delivery-container__delivery-to"></span>
+          <span class="delivery-container__address"></span>
+        </div>
+        <div class="delivery-container__address_additional">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.69769 1.14922C6.43817 0.528396 5.56198 0.528387 5.30244 1.14919L6.69769 1.14922ZM5.30244 1.14919L4.14719 3.90977L1.19202 4.16613C0.519264 4.22467 0.262282 5.05966 0.759713 5.49464L3.00514 7.45915L2.33207 10.3824C2.18436 11.0238 2.87792 11.5567 3.46133 11.2023L6.00032 9.65611L8.53797 11.2015C9.12269 11.5588 9.81568 11.0227 9.66861 10.3826L8.99549 7.45915L11.2402 5.49537C11.7385 5.05961 11.4793 4.22519 10.8083 4.16667L7.85294 3.91029L6.69769 1.14922"
+              fill="#FF970D"
+            />
+          </svg>
+          <span>4.99</span> <span>Пункт выдачи</span>
+        </div>
+      </div>
+      <div class="delivery-container__cost">
+        <span class="delivery-container__subtitle">Стоимость доставки</span>
+        <span class="delivery-container__value">Бесплатно</span>
+      </div>
+      <div class="additional-information__description sidebar_fontsize">
+        Обратная доставка товаров на склад при отказе —
+        <span class="additional-information__tooltip-switcher">бесплатно</span>
+        <div class="additional-information__tooltip sidebar_fontsize">
+          Если товары вам не подойдут, мы вернем их обратно на склад — это
+          бесплатно
+        </div>
+      </div>
+    </div> -->
+    <script type="module">
+      import { Delivery_container } from "./delivery-container.js";
+
+      const delivery = {
+        type: "courier",
+        number: "1",
+      };
+
+      const ad = new Delivery_container(delivery);
+
+      document.body.append(ad.element);
+    </script>
+  </body>
+</html>

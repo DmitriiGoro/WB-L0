@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="./payment-type.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="payment-type">
+      <div class="payment-type__header">
+        <h2>Способ оплаты</h2>
+        <button class="payment-type__button button"></button>
+      </div>
+      <div class="payment-type__card">
+        <div class="payment__card sidebar_fontsize">
+          <div class="payment__card-icon" data-element="cardIcon"></div>
+          <span class="payment__card-number" data-element="cardNumber"></span>
+          <span class="payment__card-exp" data-element="cardExp"></span>
+        </div>
+      </div>
+    </div> -->
+    <script type="module">
+      import { Payment_type } from "./payment-type.js";
+
+      const payment = new Payment_type("1");
+
+      document.body.append(payment.element);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+.delivery-container {
+  padding: 16px 24px 24px;
+  border-radius: 16px;
+  background: var(--background-white, #fff);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.delivery-container__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-container__header h2 {
+  margin: 0;
+  color: var(--text-black, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+}
+
+.delivery-container__cost {
+  display: flex;
+}
+
+.delivery-container__subtitle {
+  display: inline-block;
+  width: 185px;
+}
+
+.delivery-container__address {
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.delivery-container__delivery-type {
+  display: inline-block;
+  width: 185px;
+}
+
+.delivery-container__additional-information__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delivery-container__address_additional span {
+  color: var(--text-black, #000);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+.delivery-container__type-wrapper {
+  display: flex;
+}
+
+.delivery-container__date {
+  display: flex;
+}
+
+.delivery-container__date:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.notify {
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  min-width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -9px;
+  right: -2px;
+  background: #f55123;
+  padding: 2px 3px 1px;
+  border-radius: 16px;
+}
+
+.delivery-container__date-goods-img {
+  display: flex;
+  gap: 10px;
+}
+
+.delivery-container__date-goods-img div {
+  position: relative;
+}
+
+.delivery-container .additional-information__tooltip {
+  width: 280px;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 320px) {
+  .delivery-container {
+    margin-top: 0;
+    padding: 16px 16px 24px;
+    height: 492px;
+  }
+
+  .delivery-container__header h2 {
+    color: var(--text-black, #000);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+  }
+  .delivery-container__type-wrapper {
+    flex-direction: column;
+  }
+  .delivery-container__cost {
+    flex-direction: column;
+  }
+  .delivery-container__date {
+    flex-direction: column;
+  }
+  .delivery-container__subtitle {
+    margin-bottom: 12px;
+  }
+}

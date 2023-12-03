@@ -1,0 +1,66 @@
+.accordion__header {
+  /* display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.accordion__checkbox .checkbox__state {
+  gap: 11px;
+}
+
+.accordion__icon {
+  width: 20px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: transform 200ms linear;
+}
+
+.accordion__icon-clicked {
+  transform: rotate(180deg);
+}
+
+.accordion__body-invisible {
+  display: none;
+}
+
+.accordion__checkbox-invisible {
+  display: none;
+}
+
+.accordion__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accordion-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.accordion__info {
+  display: none;
+}
+
+.accordion__info-visible {
+  display: block;
+}
+
+.accordion .card__info-wrapper {
+  max-width: 269px;
+}
+
+@media screen and (max-width: 320px) {
+  .accordion__list {
+    gap: 8px;
+  }
+  .accordion-header__wrapper {
+    margin-bottom: 18px;
+  }
+
+  .accordion__icon {
+    margin: 0;
+  }
+}

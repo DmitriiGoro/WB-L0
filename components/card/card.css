@@ -1,0 +1,375 @@
+.card {
+  display: flex;
+  width: 100%;
+  padding-top: 12px;
+  font-family: "Segoe WP", sans-serif;
+  position: relative;
+  font-size: 0;
+}
+
+.card__title {
+  margin: 0;
+  color: var(--text-black, #000);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.card__info-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.card_fontsize {
+  color: var(--text-black, #000);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.card__checkbox {
+  margin-right: 5px;
+  position: relative;
+  top: 20px;
+}
+
+.card__preview {
+  margin-right: 16px;
+}
+
+.card__buttons {
+  /* margin-right: 16px; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__info {
+  padding: 5px 0 0 0;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+  flex-basis: 85%;
+}
+
+.card__additional-info {
+  display: flex;
+  gap: 16px;
+}
+
+.card__lost {
+  color: var(--system-orange, #ff3b30);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.card__tabs {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.checkbox__state {
+  gap: 0;
+}
+
+.card__saler {
+  color: var(--system-gray, #9797af);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.card__company span {
+  margin-right: 6px;
+  padding-top: 1px;
+}
+
+.card__company {
+  display: flex;
+  margin-top: 4px;
+  letter-spacing: 0.1px;
+}
+
+.card__info-icon {
+  cursor: pointer;
+}
+
+.card__company-tooltip {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  background: var(--background-white, #fff);
+  color: var(--light-system-text, #000);
+  padding: 11px 16px 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  top: 100%;
+  width: 300px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  transform: scale(0);
+  transition: transform 100ms linear;
+  transform-origin: top;
+  z-index: 10;
+}
+
+.tooltip__name {
+  font-weight: 800;
+}
+
+.card__info-icon:hover ~ .card__company-tooltip {
+  transform: scale(1);
+}
+
+.card__counter {
+  background: var(--background-white);
+  width: 100px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.card__total {
+  color: var(--text-black, #000);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 44px;
+  /* margin: 0 8px 0 8px; */
+  padding: 8px 0 13px;
+}
+
+.card__button {
+  color: var(--text-black, #000);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  width: 20px;
+}
+
+.card__button:disabled {
+  color: var(--rulers-rulers-input, rgba(0, 0, 0, 0.2));
+}
+
+.card__price {
+  color: var(--text-black, #000);
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 170px;
+  align-items: flex-end;
+}
+
+.card__price span {
+  font-size: 16px;
+}
+
+.card__preview-size {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+  display: block;
+  max-width: calc(100% - 8px);
+  min-width: 22px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  z-index: 3;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.card__old-price {
+  color: var(--system-gray, #9797af);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: line-through;
+  border-bottom: 1px dashed var(--rulers-rulers-input);
+  width: fit-content;
+}
+
+.card__delete,
+.card__favourite {
+  color: var(--svg-black);
+}
+
+.card__current-price[data-font-size-16px] {
+  font-size: 16px;
+}
+
+.card__current-price[data-font-size-20px] {
+  font-size: 20px;
+}
+
+.card__favourite-svg,
+.card__delete-svg {
+  cursor: pointer;
+  color: inherit;
+  transition: color 200ms linear;
+}
+
+.card__favourite:hover,
+.card__delete:hover {
+  color: var(--system-orange, #ff3b30);
+}
+
+.card__tabs {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.card:hover .card__tabs {
+  opacity: 1;
+}
+
+.favourite {
+  color: var(--system-orange, #ff3b30);
+}
+
+@media screen and (max-width: 1200px) {
+  .card__buttons {
+    margin-right: 23px;
+  }
+  .card__current-price {
+    white-space: nowrap;
+  }
+
+  .card__info {
+    flex-basis: 78%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    /* margin-bottom: 47px; */
+    border-top: 1px solid var(--rulers-rulers);
+    height: 170px;
+  }
+  .card__company {
+    display: none;
+  }
+
+  .card__size {
+    display: none;
+  }
+
+  .card__info {
+    width: calc(100% - 80px - 16px);
+  }
+
+  .card__title {
+    color: var(--text-black, #000);
+    font-size: 12px;
+    font-weight: 400;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    line-height: 1.8em;
+    max-height: 3.6em;
+  }
+
+  .card__checkbox {
+    position: absolute;
+    top: 9px;
+    left: 2px;
+  }
+  .card__preview img {
+    width: 80px;
+    height: 106px;
+  }
+  .card__buttons {
+    position: absolute;
+    flex-direction: row;
+    height: 32px;
+    align-items: center;
+    bottom: 8px;
+  }
+
+  .card__counter {
+    width: 80px;
+    height: 32px;
+  }
+
+  .card__info-wrapper {
+    justify-content: end;
+    margin-top: 20px;
+    height: fit-content;
+    gap: 7px;
+  }
+
+  .card__lost {
+    white-space: nowrap;
+  }
+
+  .card__tabs {
+    opacity: 1;
+    padding-left: 25px;
+  }
+
+  .card__price {
+    align-items: center;
+    flex-direction: row;
+    /* width: fit-content; */
+    position: absolute;
+    left: 94px;
+  }
+
+  .card__preview-size {
+    display: block;
+    bottom: 56px;
+  }
+
+  .card__current-price[data-font-size-16px],
+  .card__current-price[data-font-size-20px] {
+    font-size: 16px;
+  }
+
+  .card__old-price:nth-child(2) {
+    white-space: nowrap;
+  }
+  .card__total {
+    padding-top: 2px;
+  }
+  .card:nth-child(3) {
+    margin-top: 9px;
+  }
+  .card__additional-info span:nth-child(2) {
+    display: none;
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../components/cart/cart.css" />
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../../components/checkbox/checkbox.css" />
+    <link rel="stylesheet" href="../../components/card/card.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action="" class="cart">
+      <div class="cart__content">
+        <div class="cart__header">
+          <h2>Корзина</h2>
+        </div>
+        <div class="cart__items">
+          
+          <div class="cart__inner"></div>
+        </div>
+      </div>
+      <div class="cart__sidebar">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__total">
+            <h2 class="total__sum">Итого</h2>
+            <h2 class="total__cost">2 020 120 <span>сом</span></h2>
+          </div>
+          <div class="total__goods total__subelements">
+            <span class="goods__number">203 товара</span>
+            <span class="goods__cost">2 010 100 сом</span>
+          </div>
+          <div class="total__sale total__subelements">
+            <span class="sale__title">Скидка</span>
+            <span class="sale__total">-21 000 сом</span>
+          </div>
+          <div class="total__delivery total__subelements">
+            <span class="delivery__title">Доставка</span>
+            <span class="delivery__cost">Бесплатно</span>
+          </div>
+        </div>
+        <div class="sidebar__delivery">
+          <div class="delivery__wrapper">
+            <h3 class="delivery__type sidebar__subtitle">
+              Доставка в пункт выдачи
+            </h3>
+            <button class="delivery__button button">
+              <svg
+                class="sidebar__icon sidebar__icon_pen"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.1585 3.05991L16.9401 6.84154L6.72705 17.0546L2.73544 17.8529C2.38557 17.9229 2.07711 17.6144 2.14709 17.2646L2.94541 13.273L13.1585 3.05991ZM4.17707 13.9321L13.1585 4.95072L15.0493 6.84154L6.06789 15.8229L3.70436 16.2956L4.17707 13.9321Z"
+                  fill="#CB11AB"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.9948 7.78715L12.2132 4.00552L13.6313 2.5874C14.4145 1.8042 15.6843 1.8042 16.4675 2.5874L17.4129 3.53281C18.1961 4.31601 18.1961 5.58584 17.4129 6.36904L15.9948 7.78715ZM16.4675 5.42363C16.7286 5.16256 16.7286 4.73929 16.4675 4.47822L15.5221 3.53281C15.261 3.27174 14.8378 3.27174 14.5767 3.53281L14.104 4.00552L15.9948 5.89634L16.4675 5.42363Z"
+                  fill="#CB11AB"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="delivery__address sidebar_fontsize">
+            <span class="address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+            <div class="date">
+              <span class="address_reduced-word-spacing">5—8</span>
+              <span>фев</span>
+            </div>
+          </div>
+          <div class="delivery__additional-information">
+            <div class="additional-information__icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 10.9998C1 16.5226 5.47715 20.9998 11 20.9998C16.5228 20.9998 21 16.5226 21 10.9998C21 5.47691 16.5228 0.999756 11 0.999756C5.47715 0.999756 1 5.47691 1 10.9998ZM19.1818 10.9997C19.1818 15.5184 15.5187 19.1816 11 19.1816C6.48128 19.1816 2.81815 15.5184 2.81815 10.9997C2.81815 6.48103 6.48128 2.81791 11 2.81791C15.5187 2.81791 19.1818 6.48103 19.1818 10.9997Z"
+                  fill="url(#paint0_linear_7_2382)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.98273 9.6548C7.40206 9.29538 8.03336 9.34394 8.39278 9.76327L10.6286 12.3717L14.6826 7.58061C15.0394 7.15901 15.6704 7.10643 16.092 7.46317C16.5136 7.81991 16.5662 8.45089 16.2094 8.8725L11.7761 14.1118C11.1795 14.817 10.0933 14.8204 9.49219 14.1191L6.87427 11.0648C6.51485 10.6455 6.56341 10.0142 6.98273 9.6548Z"
+                  fill="url(#paint1_linear_7_2382)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_7_2382"
+                    x1="4"
+                    y1="1.99994"
+                    x2="11"
+                    y2="20.9998"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#0CD38B" />
+                    <stop offset="1" stop-color="#0CB477" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_7_2382"
+                    x1="9"
+                    y1="7.5"
+                    x2="10.5089"
+                    y2="15.8594"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#0CD38B" />
+                    <stop offset="1" stop-color="#0CB477" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="additional-information__description sidebar_fontsize">
+              Обратная доставка товаров на склад при отказе —
+              <span class="additional-information__tooltip-switcher"
+                >бесплатно</span
+              >
+              <div class="additional-information__tooltip sidebar_fontsize">
+                Если товары вам не подойдут, мы вернем их обратно на склад — это
+                бесплатно
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__payment">
+          <div class="payment__wrapper">
+            <h3 class="payment__type sidebar__subtitle">Оплата картой</h3>
+            <button class="payment__button button">
+              <svg
+                class="sidebar__icon sidebar__icon_pen"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.1585 3.05991L16.9401 6.84154L6.72705 17.0546L2.73544 17.8529C2.38557 17.9229 2.07711 17.6144 2.14709 17.2646L2.94541 13.273L13.1585 3.05991ZM4.17707 13.9321L13.1585 4.95072L15.0493 6.84154L6.06789 15.8229L3.70436 16.2956L4.17707 13.9321Z"
+                  fill="#CB11AB"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.9948 7.78715L12.2132 4.00552L13.6313 2.5874C14.4145 1.8042 15.6843 1.8042 16.4675 2.5874L17.4129 3.53281C18.1961 4.31601 18.1961 5.58584 17.4129 6.36904L15.9948 7.78715ZM16.4675 5.42363C16.7286 5.16256 16.7286 4.73929 16.4675 4.47822L15.5221 3.53281C15.261 3.27174 14.8378 3.27174 14.5767 3.53281L14.104 4.00552L15.9948 5.89634L16.4675 5.42363Z"
+                  fill="#CB11AB"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="payment__card sidebar_fontsize">1234 12•• •••• 1234</div>
+          <div class="payment__additional-information">
+            <label class="checkbox payment__checkbox">
+              <input type="checkbox" class="checkbox__input" />
+              <div class="checkbox__state">
+                <div class="checkbox__control">
+                  <svg
+                    class="checkbox__icon"
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 7.5L5 11L13 2"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="checkbox__title checkbox__title-default sidebar_fontsize"
+                >
+                  Списать оплату сразу
+                </div>
+              </div>
+              <div class="payment__additional-information-sub sidebar_fontsize">
+                Спишем оплату с карты при получении
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="sidebar__order">
+          <button class="button button_customed">Заказать</button>
+          <div class="sidebar__agreement">
+            <div class="agreement__icon">
+              <svg
+                width="13"
+                height="24"
+                viewBox="0 0 13 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7657 4.68031L4.59586 13.4814L0.257324 8.66919L1.74276 7.32998L4.6174 10.5185L11.2999 3.31964L12.7657 4.68031Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div class="agreement__text sidebar_fontsize">
+              Соглашаюсь
+              <a href="#">с правилами пользования торговой площадкой</a>
+              и <a href="#">возврата</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form> -->
+    <script type="module">
+      import { Cart } from "../cart/cart.js";
+
+      const cart = new Cart(document.body);
+    </script>
+  </body>
+</html>

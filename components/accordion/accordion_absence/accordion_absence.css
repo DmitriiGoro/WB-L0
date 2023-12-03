@@ -1,0 +1,81 @@
+.accordion__absence {
+  margin-top: 31px;
+}
+
+.accordion__absence .card__preview img {
+  filter: grayscale(100%);
+}
+
+.accordion__absence .card__counter {
+  display: none;
+}
+
+.accordion__absence .card__lost {
+  display: none;
+}
+
+.accordion__absence .card__lost {
+  display: none;
+}
+
+.accordion__absence .card__price {
+  opacity: 0;
+}
+
+.accordion__absence .card__tabs {
+  opacity: 1;
+}
+
+.accordion__absence .card__title,
+.accordion__absence .card__additional-info {
+  color: var(--system-gray, #9797af);
+}
+
+.accordion__absence .accordion__info {
+  display: block;
+}
+
+.accordion__absence .card__saler {
+  display: none;
+}
+
+.accordion__absence .accordion__count {
+  letter-spacing: -0.4px;
+}
+
+.accordion__absence .card__info-wrapper {
+  max-width: 275px;
+}
+
+.accordion__absence .card__buttons {
+  margin-left: 66px;
+}
+
+@media screen and (max-width: 320px) {
+  .accordion__absence .accordion-header__wrapper {
+    margin-bottom: 18px;
+  }
+  .accordion__absence {
+    margin-top: 42px;
+  }
+  .accordion__absence .card:nth-child(3) {
+    margin-top: 0;
+  }
+  .accordion__absence .card__info-wrapper {
+    margin-top: 0;
+  }
+  .accordion__absence .card__buttons {
+    right: -18px;
+  }
+  .accordion__absence .card__tabs {
+    gap: 19px;
+  }
+  .accordion__absence .card {
+    padding-top: 12px;
+    margin-top: 10px;
+    height: 154px;
+  }
+  .accordion__absence .cart__divider {
+    display: none;
+  }
+}

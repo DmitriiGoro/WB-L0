@@ -1,0 +1,20 @@
+.button_customed {
+  border-radius: 8px;
+  width: 100%;
+  padding: 0px 32px 5px 32px;
+  height: 44px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white, white);
+  transition: background 200ms ease-in-out, transform 200ms linear,
+    border 200ms ease-in-out;
+  border: none;
+  vertical-align: middle;
+  background: var(--system-magenta, #cb11ab);
+}
+
+.button_customed:hover {
+  background: var(--system-magenta-with-opacity, rgba(203, 17, 171, 0.3));
+}
